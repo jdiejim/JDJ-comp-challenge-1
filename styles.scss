@@ -35,7 +35,7 @@ header {
   flex-direction: column;
   // height: 33.3333%;
   justify-content: center;
-  height: 33.333%;
+  height: 33.3333vh;
   min-height: 200px;
   transition: background-size 0.5s;
   width: 33.3333%;
@@ -137,7 +137,7 @@ main {
 
 .graphics {
   align-items: center;
-  background-image: url(Images/profile-pic.jpg);
+  background-image: url(Images/profile-pic-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,8 +201,6 @@ main {
   background-image: url(Assets/next.svg);
 }
 
-
-
 // TODO: Media Queries
 
 // over 1300
@@ -258,3 +256,9 @@ main {
     width: 100%;
   }
 }
+
+// BUG: medai queries
+// FIXME: minheigh
+// FIXME: min wid
+// TODO: responsive design
+// FIXME: positioning with percentages
