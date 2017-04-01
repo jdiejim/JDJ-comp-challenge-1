@@ -5,9 +5,6 @@ $boxYellow: #FF9E00;
 $boxGreen: #35BC7A;
 $boxBlue: #1E8BC4;
 
-
-// TODO: Setup
-// TODO: font
 body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -15,39 +12,41 @@ body {
 }
 
 .page-container {
-  margin: 10px auto;
-  width: 95%;
+  display: flex;
+  // margin: 10px auto;
+  justify-content: center;
+  // width: 95%;
 }
-
-// TODO: Globals
-
-// TODO: Nav
 
 header {
   display: flex;
   flex-wrap: wrap;
-  float: left;
   width: 60%;
   height: 100vh;
 }
 
 .box {
   align-items: center;
-  background-position: center;
+  background-position: 50% 40%;
   background-repeat: no-repeat;
   background-size: 20%;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   height: 33.3333%;
   justify-content: center;
+  transition: background-size 0.5s;
   width: 33.3333%;
   p {
     color: #FFFFFF;
     height: 20px;
-    margin-top: 50%;
+    margin-top: 40%;
     text-align: center;
     text-transform: uppercase;
     width: 40%;
+  }
+  &:hover {
+    background-size: 27%;
   }
 }
 
@@ -71,11 +70,18 @@ header {
     background-repeat: no-repeat;
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
+    cursor: pointer;
     font-size: 1rem;
-    margin: 10px 30px;
+    margin: 10px 30px 0px;
     padding: 10px 0px;
     text-transform: uppercase;
     width: 30%;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
@@ -122,31 +128,74 @@ header {
 
 main {
   background-color: black;
-  float: right;
   height: 100vh;
   width: 40%;
 }
 
 .graphics {
+  align-items: center;
   background-image: url(Images/profile-pic.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
   height: 100vh;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: column;
   width: 100%;
+}
+.arrows-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .arrows {
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 50px;
+    margin: 0 20px;
+    opacity: 0.4;
+    transition: width 0.5s, height 0.5s, opacity 0.5s;
+    width: 50px;
+    &:hover {
+      height: 70px;
+      opacity: 0.7;
+      width: 70px;
+    }
+  }
+}
+.counter-container {
+  align-self: flex-end;
+  margin-top: 10px;
+  .counter {
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    opacity: 0.4;
+    width: 12px;
+    &:last-child {
+      background-color: transparent;
+    }
+  }
+}
+
+#counter1 {
+  background-color: white;
+}
+
+#back {
+  background-image: url(Assets/back.svg);
+}
+#next {
+  background-image: url(Assets/next.svg);
 }
 
 
+
 // TODO: Media Queries
-
-// TODO: box 1
-// TODO: add h1
-// TODO: add copy
-// TODO: add buttons
-// TODO: add bg buttons
-// TODO: style btn
-
-// BUG: box1 and 2 hiegh
-
-// FIXME: position of icons too low
-// TODO: photo icons
