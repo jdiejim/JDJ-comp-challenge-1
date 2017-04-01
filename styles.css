@@ -1,5 +1,6 @@
 body {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
   margin: 0; }
 
 header {
@@ -10,37 +11,66 @@ header {
   height: 100vh; }
 
 .box {
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 33.3333%; }
+  .box p {
+    color: #FFFFFF;
+    height: 20px;
+    margin-top: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 40%; }
 
 .box1 {
   background-color: #35BC7A;
   width: 66.6666%; }
 
 .box2 {
-  background-color: #FF9E00; }
+  background-color: #FF9E00;
+  background-image: url(Assets/profile.svg); }
 
 .box3 {
-  background-color: #1E8BC4; }
+  background-color: #1E8BC4;
+  background-image: url(Assets/battery.svg); }
 
 .box4 {
-  background-color: #F15A49; }
+  background-color: #F15A49;
+  background-image: url(Assets/books.svg); }
 
 .box5 {
-  background-color: #35BC7A; }
+  background-color: #35BC7A;
+  background-image: url(Assets/blog.svg); }
 
 .box6 {
-  background-color: #F86925; }
+  background-color: #F86925;
+  background-image: url(Assets/share.svg); }
 
 .box7 {
-  background-color: #1E8BC4; }
+  background-color: #1E8BC4;
+  background-image: url(Assets/plane.svg); }
 
 .box8 {
-  background-color: #F86925; }
+  background-color: #F86925;
+  background-image: url(Assets/portfolio.svg); }
 
 main {
   background-color: black;
   float: right;
   height: 100vh;
   width: 40%; }
+
+.graphics {
+  background-image: url(Images/profile-pic.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
