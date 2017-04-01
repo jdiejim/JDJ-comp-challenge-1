@@ -3,6 +3,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0; }
 
+.page-container {
+  margin: 10px auto;
+  width: 95%; }
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -14,9 +18,10 @@ header {
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 25%;
+  background-size: 20%;
   display: flex;
   flex-direction: column;
+  height: 33.3333%;
   justify-content: center;
   width: 33.3333%; }
   .box p {
@@ -30,6 +35,37 @@ header {
 .box1 {
   background-color: #35BC7A;
   width: 66.6666%; }
+  .box1 h1 {
+    color: #FFFFFF;
+    font-size: 1.8em;
+    margin: 20px 30px;
+    text-transform: uppercase; }
+  .box1 p {
+    color: #FFFFFF;
+    font-weight: 300;
+    margin: 5px 30px;
+    opacity: 0.75; }
+  .box1 button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin: 10px 30px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    width: 30%; }
+
+#resume {
+  background-image: url(Assets/download.svg);
+  background-position: 20% 40%;
+  background-size: 10%; }
+
+#contact {
+  background-image: url(Assets/info.svg);
+  background-position: 20% 42%;
+  background-size: 8%;
+  margin-left: -10px; }
 
 .box2 {
   background-color: #FF9E00;
