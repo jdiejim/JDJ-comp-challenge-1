@@ -5,6 +5,7 @@ $boxYellow: #FF9E00;
 $boxGreen: #35BC7A;
 $boxBlue: #1E8BC4;
 
+// Setup
 body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -13,11 +14,10 @@ body {
 
 .page-container {
   display: flex;
-  // margin: 10px auto;
   justify-content: center;
-  // width: 95%;
 }
 
+// Header
 header {
   display: flex;
   flex-wrap: wrap;
@@ -33,8 +33,10 @@ header {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  height: 33.3333%;
+  // height: 33.3333%;
   justify-content: center;
+  height: 33.333%;
+  min-height: 200px;
   transition: background-size 0.5s;
   width: 33.3333%;
   p {
@@ -126,6 +128,7 @@ header {
   background-image: url(Assets/portfolio.svg);
 }
 
+// Main
 main {
   background-color: black;
   height: 100vh;
@@ -145,6 +148,7 @@ main {
   flex-direction: column;
   width: 100%;
 }
+
 .arrows-container {
   align-items: center;
   display: flex;
@@ -169,6 +173,7 @@ main {
     }
   }
 }
+
 .counter-container {
   align-self: flex-end;
   margin-top: 10px;
@@ -199,3 +204,57 @@ main {
 
 
 // TODO: Media Queries
+
+// over 1300
+@media screen and (min-width: 1300px) {
+
+}
+
+// under 500
+@media screen and (max-width: 750px) {
+
+  .page-container {
+    flex-direction: column-reverse;
+  }
+
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    height: 0;
+  }
+  .graphics {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+  }
+
+  .counter-container {
+    display: none;
+  }
+  .arrows-container {
+    display: none;
+  }
+
+  .box {
+    height: 25%;
+  }
+  .box1 {
+    padding-left: 150px;
+    width: 100%;
+    button {
+      margin: 10px 30px 20px;
+    }
+    height: 33.3333%;
+  }
+  .box6 {
+    background-color: $boxYellow;
+  }
+  .box8 {
+    width: 100%;
+  }
+}
