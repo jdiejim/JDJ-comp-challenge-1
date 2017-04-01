@@ -1,0 +1,71 @@
+// Color Pallete
+$boxRed: #F15A49;
+$boxOrange: #F86925;
+$boxYellow: #FF9E00;
+$boxGreen: #35BC7A;
+$boxBlue: #1E8BC4;
+
+
+// TODO: Setup
+// TODO: font
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+// TODO: Globals
+
+// TODO: Nav
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 60%;
+  height: 100vh;
+}
+
+.box {
+  width: 33.3333%;
+}
+
+.box1 {
+  background-color: $boxGreen;
+  width: 66.6666%
+}
+.box2 {
+  background-color: $boxYellow;
+}
+.box3 {
+  background-color: $boxBlue;
+}
+.box4 {
+  background-color: $boxRed;
+}
+.box5 {
+  background-color: $boxGreen;
+}
+.box6 {
+  background-color: $boxOrange;
+}
+.box7 {
+  background-color: $boxBlue;
+}
+.box8 {
+  background-color: $boxOrange;
+}
+
+main {
+  background-color: black;
+  float: right;
+  height: 100vh;
+  width: 40%;
+}
+
+// TODO: Picture
+
+// TODO: Add Icons
+
+// TODO: Media Queries
+
+// TODO: Large box
