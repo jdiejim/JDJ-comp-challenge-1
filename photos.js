@@ -18,6 +18,22 @@ $('.arrows-container').on('click', function(e) {
   updateGraphics(photoIndex);
 });
 
+$('.counter-container').on('click', function(e) {
+  var targetId = e.target.id;
+  switch (targetId) {
+    case 'counter1':
+      photoIndex = 1;
+      break;
+    case 'counter2':
+      photoIndex = 2;
+      break;
+    case 'counter3':
+      photoIndex = 3;
+      break;
+  }
+  updateGraphics(photoIndex);
+});
+
 function updateGraphics(photoIndex) {
   $('.graphics').css('background-image', 'url(Images/profile-pic-' + photoIndex + '.jpg)');
   $('#counter' + photoIndex).css('background-color', 'white');
