@@ -35,7 +35,9 @@ $('.counter-container').on('click', function(e) {
 });
 
 function updateGraphics(photoIndex) {
-  $('.graphics').css('background-image', 'url(Images/profile-pic-' + photoIndex + '.jpg)');
+  var imgURL = 'url(Images/profile-pic-' + photoIndex + '.jpg)';
+  $('.bubble-profile-pic').css('background-image', imgURL);
+  $('.graphics').css('background-image', imgURL);
   $('#counter' + photoIndex).css('background-color', 'white');
   switch (photoIndex) {
     case 1:
