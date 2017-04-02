@@ -10,8 +10,42 @@ body {
 header {
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
-  height: 100vh; }
+  height: 100vh;
+  width: 60%; }
+
+.bubble-container {
+  display: none; }
+
+.profile-container {
+  background-color: red; }
+  .profile-container h1 {
+    color: #FFFFFF;
+    font-size: 1.8em;
+    background-color: green;
+    text-transform: uppercase; }
+  .profile-container p {
+    color: #FFFFFF;
+    background-color: black;
+    font-weight: 300;
+    margin: 0;
+    opacity: 0.75; }
+
+.button-container {
+  background-color: blue; }
+  .button-container button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    width: 150px; }
+    .button-container button:focus {
+      outline: none; }
+    .button-container button:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
 
 .box {
   align-items: center;
@@ -20,61 +54,29 @@ header {
   background-size: 20%;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  height: 33.3333vh;
   min-height: 200px;
   transition: background-size 0.5s;
   width: 33.3333%; }
   .box p {
     color: #FFFFFF;
-    height: 20px;
     margin-top: 40%;
     text-align: center;
-    text-transform: uppercase;
-    width: 40%; }
+    text-transform: uppercase; }
   .box:hover {
     background-size: 27%; }
 
 .box1 {
   background-color: #35BC7A;
   width: 66.6666%; }
-  .box1 h1 {
-    color: #FFFFFF;
-    font-size: 1.8em;
-    margin: 20px 30px;
-    text-transform: uppercase; }
-  .box1 p {
-    color: #FFFFFF;
-    font-weight: 300;
-    margin: 5px 30px;
-    opacity: 0.75; }
-  .box1 button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 1rem;
-    margin: 10px 30px 0px;
-    padding: 10px 0px;
-    text-transform: uppercase;
-    width: 30%; }
-    .box1 button:focus {
-      outline: none; }
-    .box1 button:hover {
-      background-color: rgba(255, 255, 255, 0.3); }
 
 #resume {
-  background-image: url(Assets/download.svg);
   background-position: 20% 40%;
   background-size: 10%; }
 
 #contact {
-  background-image: url(Assets/info.svg);
   background-position: 20% 42%;
-  background-size: 8%;
-  margin-left: -10px; }
+  background-size: 8%; }
 
 .box2 {
   background-color: #FF9E00;
@@ -166,45 +168,81 @@ main {
 #next {
   background-image: url(Assets/next.svg); }
 
-@media screen and (max-width: 750px) {
-  .page-container {
-    flex-direction: column-reverse; }
-
+@media screen and (max-width: 400px) {
   header {
     width: 100%; }
 
   main {
-    width: 100%;
-    height: 0; }
+    width: 0%; }
+
+  .bubble-profile-pic {
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-color: black;
+    background-image: url(Images/profile-pic-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%; }
+
+  .profile-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column; }
+    .profile-container h1 {
+      width: 100%;
+      margin: 0 0 10px; }
+    .profile-container p {
+      display: none; }
+    .profile-container button {
+      width: 100%;
+      margin: 0 0 5px; }
+
+  #contact {
+    margin: 0; }
 
   .graphics {
-    border-radius: 50%;
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    left: 30px;
-    top: 40px; }
-
-  .counter-container {
     display: none; }
 
-  .arrows-container {
-    display: none; }
+  .bubble-container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
   .box {
-    height: 25%; }
+    background-size: 30%;
+    height: 20vh; }
 
   .box1 {
-    padding-left: 150px;
+    display: flex;
     width: 100%;
-    height: 33.3333%; }
-    .box1 button {
-      margin: 10px 30px 20px; }
+    padding-bottom: 10px;
+    height: 20vh; }
+
+  .box2 {
+    width: 100%; }
+
+  .box3 {
+    width: 50%; }
+
+  .box4 {
+    width: 50%; }
+
+  .box5 {
+    width: 50%; }
 
   .box6 {
-    background-color: #FF9E00; }
+    width: 50%; }
+
+  .box7 {
+    width: 50%; }
 
   .box8 {
-    width: 100%; } }
+    background-color: #FF9E00;
+    background-size: 20%;
+    width: 50%; } }
 
 /*# sourceMappingURL=styles.css.map */

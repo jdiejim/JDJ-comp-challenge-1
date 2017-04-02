@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/67f5e75840.js"></script>
 <script>window.jQuery || document.write('<script src="path/to/your/jquery.min.js"><\/script>')</script>
   </head>
   <body>
@@ -14,11 +15,18 @@
 
     <header>
       <div class="box1">
-        <h1>Darth Vader</h1>
-        <p> I am a Sith lord, second in command of the Galactic Empire.</p>
-        <p> My main goal is to destroy the Rebel Alliance.</p>
-        <button id="resume" type="button" name="button">Resume</button>
-        <button id="contact" type="button" name="button">Contact</button>
+        <section class="bubble-container">
+          <div class="bubble-profile-pic"></div>
+        </section>
+        <section class="profile-container">
+          <h1>Darth Vader</h1>
+          <p> I am a Sith lord, second in command of the Galactic Empire.</p>
+          <p> My main goal is to destroy the Rebel Alliance.</p>
+          <section class="button-container">
+            <button id="resume" type="button" name="button"><i class="fa fa-download" aria-hidden="true"></i> Resume</button>
+            <button id="contact" type="button" name="button"><i class="fa fa-info" aria-hidden="true"></i> Contact</button>
+          </section>
+        </section>
       </div>
       <div class="box box2">
         <p>profile</p>

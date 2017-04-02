@@ -21,52 +21,34 @@ body {
 header {
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
   height: 100vh;
+  width: 60%;
 }
 
-.box {
-  align-items: center;
-  background-position: 50% 40%;
-  background-repeat: no-repeat;
-  background-size: 20%;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  // height: 33.3333%;
-  justify-content: center;
-  height: 33.3333vh;
-  min-height: 200px;
-  transition: background-size 0.5s;
-  width: 33.3333%;
-  p {
-    color: #FFFFFF;
-    height: 20px;
-    margin-top: 40%;
-    text-align: center;
-    text-transform: uppercase;
-    width: 40%;
-  }
-  &:hover {
-    background-size: 27%;
-  }
+.bubble-container {
+  display: none;
 }
-
-.box1 {
-  background-color: $boxGreen;
-  width: 66.6666%;
+.profile-container {
+  background-color: red;
   h1 {
     color: #FFFFFF;
     font-size: 1.8em;
-    margin: 20px 30px;;
+    // margin: 10px 30px;
+    background-color: green;
     text-transform: uppercase;
   }
   p {
     color: #FFFFFF;
+    background-color: black;
     font-weight: 300;
-    margin: 5px 30px;
+    // margin: 5px 30px;
+    margin: 0;
     opacity: 0.75;
   }
+}
+
+.button-container {
+  background-color: blue;
   button {
     background-color: transparent;
     background-repeat: no-repeat;
@@ -74,10 +56,10 @@ header {
     color: #FFFFFF;
     cursor: pointer;
     font-size: 1rem;
-    margin: 10px 30px 0px;
+    // margin: 10px 0;
     padding: 10px 0px;
     text-transform: uppercase;
-    width: 30%;
+    width: 150px;
     &:focus {
       outline: none;
     }
@@ -87,16 +69,42 @@ header {
   }
 }
 
+
+.box {
+  align-items: center;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+  transition: background-size 0.5s;
+  width: 33.3333%;
+  p {
+    color: #FFFFFF;
+    margin-top: 40%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &:hover {
+    background-size: 27%;
+  }
+}
+
+.box1 {
+  background-color: $boxGreen;
+  width: 66.6666%;
+}
+
 #resume {
-  background-image: url(Assets/download.svg);
   background-position: 20% 40%;
   background-size: 10%;
 }
 #contact {
-  background-image: url(Assets/info.svg);
   background-position: 20% 42%;
   background-size: 8%;
-  margin-left: -10px;
+  // margin-left: -10px;
 }
 
 .box2 {
@@ -134,7 +142,6 @@ main {
   height: 100vh;
   width: 40%;
 }
-
 .graphics {
   align-items: center;
   background-image: url(Images/profile-pic-1.jpg);
@@ -203,63 +210,152 @@ main {
 
 // TODO: Media Queries
 
-// over 1300
-@media screen and (min-width: 1300px) {
-
-}
-
-// under 500
-@media screen and (max-width: 750px) {
-
-  .page-container {
-    flex-direction: column-reverse;
-  }
-
+@media screen and (max-width: 400px) {
   header {
     width: 100%;
   }
   main {
-    width: 100%;
-    height: 0;
-  }
-  .graphics {
-    border-radius: 50%;
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    left: 30px;
-    top: 40px;
+    width: 0%;
   }
 
-  .counter-container {
+  .bubble-profile-pic {
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-color: black;
+    background-image: url(Images/profile-pic-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  .profile-container {
+    width: 60%;
+    // background-color: orange;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      // background-color: black;
+      width: 100%;
+      margin: 0 0 10px;
+    }
+    p {
+      display: none;
+    }
+    button {
+      width: 100%;
+      margin: 0 0 5px;
+      // align-self: flex-end;
+    }
+  }
+
+  #contact {
+    margin: 0;
+  }
+
+  .graphics {
     display: none;
   }
-  .arrows-container {
-    display: none;
+
+  .bubble-container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .box {
-    height: 25%;
+    background-size: 30%;
+    height: 20vh;
+    p {
+      // background-color: black;
+    }
   }
   .box1 {
-    padding-left: 150px;
+    display: flex;
     width: 100%;
-    button {
-      margin: 10px 30px 20px;
-    }
-    height: 33.3333%;
+    padding-bottom: 10px;
+    height: 20vh
+  }
+  .box2 {
+    width: 100%;
+  }
+  .box3 {
+    width: 50%;
+  }
+  .box4 {
+    width: 50%;
+  }
+  .box5 {
+    width: 50%;
   }
   .box6 {
-    background-color: $boxYellow;
+    width: 50%;
+  }
+  .box7 {
+    width: 50%;
   }
   .box8 {
-    width: 100%;
+    background-color: $boxYellow;
+    background-size: 20%;
+    width: 50%;
   }
 }
+
+
+// under 500
+// @media screen and (max-width: 750px) {
+//
+//   .page-container {
+//     flex-direction: column-reverse;
+//   }
+//
+//   header {
+//     width: 100%;
+//   }
+//   main {
+//     width: 100%;
+//     height: 0;
+//   }
+//   .graphics {
+//     border-radius: 50%;
+//     width: 110px;
+//     height: 110px;
+//     position: absolute;
+//     left: 30px;
+//     top: 40px;
+//   }
+//
+//   .counter-container {
+//     display: none;
+//   }
+//   .arrows-container {
+//     display: none;
+//   }
+//
+//   .box {
+//     height: 25%;
+//   }
+//   .box1 {
+//     padding-left: 150px;
+//     width: 100%;
+//     button {
+//       margin: 10px 30px 20px;
+//     }
+//     height: 33.3333%;
+//   }
+//   .box6 {
+//     background-color: $boxYellow;
+//   }
+//   .box8 {
+//     width: 100%;
+//   }
+// }
 
 // BUG: medai queries
 // FIXME: minheigh
 // FIXME: min wid
 // TODO: responsive design
 // FIXME: positioning with percentages
-// TODO: stack multiple backgrounds
