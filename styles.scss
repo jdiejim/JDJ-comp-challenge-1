@@ -300,8 +300,46 @@ main {
   }
 }
 
-// TODO: media query height long
+// over 750 vertical
+@media screen and (min-height: 750px) {
+  .box {
+    background-size: 30%;
+    p {
+      font-size: 1.6em;
+      margin-top: 50%;
+    }
+    &:hover {
+      background-size: 35%;
+    }
+  }
+
+  .box1 {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-container {
+    padding: 5px 0 0 25px;
+    h1 {
+      font-size: 4em;
+      margin: 0 0 10px;
+    }
+    p {
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+  }
+
+  .button-container {
+    button {
+      font-size: 1.5rem;
+      width: 180px;
+    }
+  }
+}
+
 // TODO: media query long
+// TODO: media query height small
 
 
 // under 500
