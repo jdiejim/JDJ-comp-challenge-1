@@ -244,7 +244,7 @@ main {
     background-color: #FF9E00;
     background-size: 20%;
     width: 50%; } }
-@media screen and (min-height: 750px) {
+@media screen and (min-height: 750px) and (min-width: 1700px) {
   .box {
     background-size: 30%; }
     .box p {
@@ -269,5 +269,14 @@ main {
   .button-container button {
     font-size: 1.5rem;
     width: 180px; } }
+@media screen and (max-width: 1200px) {
+  .box1 {
+    display: flex;
+    justify-content: center; } }
+@media screen and (min-width: 1780px) {
+  .profile-container h1 {
+    font-size: 3em; }
+  .profile-container p {
+    font-size: 1.5em; } }
 
 /*# sourceMappingURL=styles.css.map */

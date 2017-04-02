@@ -301,7 +301,7 @@ main {
 }
 
 // over 750 vertical
-@media screen and (min-height: 750px) {
+@media screen and (min-height: 750px) and (min-width: 1700px) {
   .box {
     background-size: 30%;
     p {
@@ -338,61 +338,30 @@ main {
   }
 }
 
+// under 1200
+@media screen and (max-width: 1200px) {
+  .box1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// over 1780
+@media screen and (min-width: 1780px) {
+  .profile-container {
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
+
 // TODO: media query long
 // TODO: media query height small
 
-
-// under 500
-// @media screen and (max-width: 750px) {
-//
-//   .page-container {
-//     flex-direction: column-reverse;
-//   }
-//
-//   header {
-//     width: 100%;
-//   }
-//   main {
-//     width: 100%;
-//     height: 0;
-//   }
-//   .graphics {
-//     border-radius: 50%;
-//     width: 110px;
-//     height: 110px;
-//     position: absolute;
-//     left: 30px;
-//     top: 40px;
-//   }
-//
-//   .counter-container {
-//     display: none;
-//   }
-//   .arrows-container {
-//     display: none;
-//   }
-//
-//   .box {
-//     height: 25%;
-//   }
-//   .box1 {
-//     padding-left: 150px;
-//     width: 100%;
-//     button {
-//       margin: 10px 30px 20px;
-//     }
-//     height: 33.3333%;
-//   }
-//   .box6 {
-//     background-color: $boxYellow;
-//   }
-//   .box8 {
-//     width: 100%;
-//   }
-// }
-
-// BUG: medai queries
 // FIXME: minheigh
 // FIXME: min wid
 // TODO: responsive design
-// FIXME: positioning with percentages
+// TODO: README
