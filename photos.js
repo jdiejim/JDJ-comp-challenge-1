@@ -52,3 +52,32 @@ function updateGraphics(photoIndex) {
       break;
   }
 }
+
+
+$('.box7').on('click', fly);
+
+
+
+function fly() {
+    var isActive = true;
+    var plane = $('.box7');
+    var xPosition = 50;
+    var yPosition = 40;
+    var counter = 0;
+    var id = setInterval(frame, 7);
+    function frame() {
+      if (counter === 65) {
+        clearInterval(id);
+      } else {
+        xPosition += 2;
+        yPosition -= 2;
+        counter += 1;
+        plane.css('background-position', xPosition + '%' + yPosition + '%' );
+        console.log(counter);
+        if (yPosition === -30) {
+          xPosition = -10;
+          yPosition = 100;
+        }
+      }
+    }
+  }
