@@ -13,38 +13,38 @@ header {
   height: 100vh;
   width: 60%; }
 
-.bubble-container {
-  display: none; }
-
 .profile-container {
-  padding: 5px 0 0 25px; }
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 0 10px; }
   .profile-container h1 {
     color: #FFFFFF;
     font-size: 1.8em;
-    margin: 40px 0 10px;
+    margin: 0;
     text-transform: uppercase; }
   .profile-container p {
     color: #FFFFFF;
     font-weight: 300;
-    margin: 0;
+    margin: 15px 0 10px;
     opacity: 0.75; }
 
-.button-container {
-  margin: 10px 0 0; }
-  .button-container button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
-    cursor: pointer;
-    font-size: 1rem;
-    padding: 10px 0px;
-    text-transform: uppercase;
-    width: 150px; }
-    .button-container button:focus {
-      outline: none; }
-    .button-container button:hover {
-      background-color: rgba(255, 255, 255, 0.3); }
+.button-container button {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 40px;
+  text-transform: uppercase;
+  width: 150px; }
+  .button-container button:focus {
+    outline: none; }
+  .button-container button:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+  .button-container button:last-child {
+    margin-left: 10px; }
 
 .box {
   align-items: center;
@@ -54,13 +54,11 @@ header {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  min-height: 200px;
   transition: background-size 0.5s;
   width: 33.3333%; }
   .box p {
     color: #FFFFFF;
     margin-top: 40%;
-    text-align: center;
     text-transform: uppercase; }
   .box:hover {
     background-size: 27%; }
@@ -68,15 +66,6 @@ header {
 .box1 {
   background-color: #35BC7A;
   width: 66.6666%; }
-
-#resume {
-  background-position: 20% 40%;
-  background-size: 10%; }
-
-#contact {
-  background-position: 20% 42%;
-  background-size: 8%;
-  margin-left: 10px; }
 
 .box2 {
   background-color: #FF9E00;
@@ -107,12 +96,10 @@ header {
   background-image: url(Assets/portfolio.svg); }
 
 main {
-  background-color: black;
   height: 100vh;
   width: 40%; }
 
 .graphics {
-  align-items: center;
   background-image: url(Images/profile-pic-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -120,9 +107,23 @@ main {
   display: flex;
   height: 100vh;
   justify-content: space-between;
-  align-content: space-between;
-  flex-direction: column;
-  width: 100%; }
+  flex-direction: column; }
+
+.counter-container {
+  align-self: flex-end;
+  margin-top: 10px; }
+
+.counter {
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  height: 12px;
+  opacity: 0.6;
+  width: 12px; }
+  .counter:first-child {
+    background-color: #FFFFFF; }
+  .counter:last-child {
+    background-color: transparent; }
 
 .arrows-container {
   align-items: center;
@@ -130,192 +131,95 @@ main {
   justify-content: space-between;
   width: 100%; }
   .arrows-container .arrows {
-    background-color: black;
+    background-color: #000000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 40%;
-    border: 5px solid white;
+    border: 5px solid #FFFFFF;
     border-radius: 50%;
     height: 50px;
     margin: 0 20px;
     opacity: 0.4;
     transition: width 0.5s, height 0.5s, opacity 0.5s;
     width: 50px; }
+    .arrows-container .arrows:first-child {
+      background-image: url(Assets/back.svg); }
+    .arrows-container .arrows:last-child {
+      background-image: url(Assets/next.svg); }
     .arrows-container .arrows:hover {
-      height: 70px;
+      height: 60px;
       opacity: 0.7;
-      width: 70px; }
+      width: 60px; }
 
-.counter-container {
-  align-self: flex-end;
-  margin-top: 10px; }
-  .counter-container .counter {
-    background-color: black;
-    border-radius: 50%;
-    display: inline-block;
-    height: 12px;
-    opacity: 0.4;
-    width: 12px; }
-    .counter-container .counter:last-child {
-      background-color: transparent; }
-
-#counter1 {
-  background-color: white; }
-
-#back {
-  background-image: url(Assets/back.svg); }
-
-#next {
-  background-image: url(Assets/next.svg); }
-
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
   header {
     width: 100%; }
 
   main {
-    width: 0%; }
+    display: none; }
+
+  .box {
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    display: flex;
+    height: 12.5vh;
+    justify-content: flex-end;
+    transition: background-size 0.5s;
+    width: 100%; }
+    .box p {
+      font-size: 0.8em;
+      letter-spacing: 0.3em;
+      margin: 0 10px 0 0; }
+    .box:hover {
+      background-size: 12%; }
+
+  .box1 {
+    align-items: center;
+    display: flex;
+    height: 15vh;
+    width: 100%; }
+
+  .bubble-container {
+    width: 25%; }
 
   .bubble-profile-pic {
-    align-self: center;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     display: block;
-    background-color: black;
     background-image: url(Images/profile-pic-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin: 0 10px; }
 
   .profile-container {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0; }
+    padding: 0 10px;
+    width: 75%; }
     .profile-container h1 {
-      width: 100%;
-      margin: 0 0 10px;
-      font-size: 1.5em; }
+      font-size: 1em;
+      margin: 0;
+      text-transform: uppercase; }
     .profile-container p {
-      display: none; }
-    .profile-container button {
-      font-size: 0.5em;
-      width: 85px;
-      margin: 0 0 5px; }
-
-  .box2 {
-    height: 10vh; }
+      font-size: 0.1em;
+      margin: 0 0 -10px;
+      width: 78%; }
 
   .button-container {
-    width: 80%; }
-
-  #contact {
-    margin: 0;
-    float: right; }
-
-  .graphics {
-    display: none; }
-
-  .bubble-container {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-
-  .box {
-    background-size: 30%;
-    height: 20vh; }
-
-  .box1 {
-    display: flex;
-    width: 100%;
-    padding-bottom: 10px;
-    height: 20vh; }
-
-  .box2 {
-    width: 100%; }
-
-  .box3 {
-    width: 50%; }
-
-  .box4 {
-    width: 50%; }
-
-  .box5 {
-    width: 50%; }
-
-  .box6 {
-    width: 50%; }
-
-  .box7 {
-    width: 50%; }
-
-  .box8 {
-    background-color: #FF9E00;
-    background-size: 20%;
-    width: 50%; } }
-@media screen and (max-width: 360px) {
-  .profile-container {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0 0 10px; }
-    .profile-container h1 {
-      width: 100%;
-      margin: 0 0 10px;
-      font-size: 1.3em; }
-    .profile-container p {
-      display: none; }
-    .profile-container button {
-      font-size: 0.5em;
-      max-width: 65px;
-      margin: 0 0 5px; } }
-@media screen and (min-height: 750px) and (min-width: 1700px) {
-  .box {
-    background-size: 30%; }
-    .box p {
-      font-size: 1.6em;
-      margin-top: 50%; }
-    .box:hover {
-      background-size: 35%; }
-
-  .box1 {
-    display: flex;
-    align-items: center; }
-
-  .profile-container {
-    padding: 5px 0 0 25px; }
-    .profile-container h1 {
-      font-size: 4em;
-      margin: 0 0 10px; }
-    .profile-container p {
-      font-size: 1.5em;
-      line-height: 1.5em; }
-
-  .button-container button {
-    font-size: 1.5rem;
-    width: 180px; } }
-@media screen and (max-width: 1200px) {
-  .box1 {
-    display: flex;
-    justify-content: center; } }
-@media screen and (min-width: 1780px) {
-  .profile-container h1 {
-    font-size: 3em; }
-  .profile-container p {
-    font-size: 1.5em; } }
-@media screen and (max-width: 900px) {
-  .profile-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .profile-container h1 {
-      margin: 0; }
-    .profile-container p {
-      font-size: 0.7em;
-      width: 90%; }
-    .profile-container button {
-      font-size: 1em;
-      width: 100px; } }
+    align-self: flex-end; }
+    .button-container button {
+      background-image: url(Assets/download.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 70%;
+      border: none;
+      color: transparent;
+      height: 30px;
+      width: 30px; }
+      .button-container button:last-child {
+        background-image: url(Assets/info.svg);
+        margin-left: 0;
+        margin-right: 1px; } }
 
 /*# sourceMappingURL=styles.css.map */

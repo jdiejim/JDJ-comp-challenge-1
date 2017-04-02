@@ -75,7 +75,6 @@ function fly() {
         yPosition -= 2;
         counter += 1;
         plane.css('background-position', xPosition + '%' + yPosition + '%' );
-        console.log(counter);
         if (yPosition === -30) {
           xPosition = -10;
           yPosition = 100;
