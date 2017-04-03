@@ -204,12 +204,13 @@ main {
   }
 }
 
-// ----- under 850px -----
-@media screen and (max-width: 850px) {
+// ----- under 950px -----
+@media screen and (max-width: 950px) {
   // ----- Boxes -----
   .button-container {
     button {
-      width: 110px;
+      font-size: 0.8rem;
+      width: 90px;
     }
   }
 }
@@ -229,8 +230,8 @@ main {
   }
 }
 
-// ----- Mobile under 650px -----
-@media screen and (max-width: 650px) {
+// ----- Mobile under 690px -----
+@media screen and (max-width: 690px) {
   // ----- Setup -----
   header {
     width: 100%;
