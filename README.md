@@ -15,8 +15,10 @@ Recreate the static comp and make it responsive.
 ![Original Comp](Screenshots/original.jpg)
 
 ## My Version (normal)
+![Original Comp](Screenshots/my-version-normal.png)
 
 ## My Version (mobile)
+![Original Comp](Screenshots/my-version-mobile.png)
 
 ## MY Version v2 (normal)
 
