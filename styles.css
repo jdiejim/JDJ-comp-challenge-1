@@ -151,7 +151,23 @@ main {
       opacity: 0.7;
       width: 60px; }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 1000px) {
+  .profile-container h1 {
+    color: #FFFFFF;
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase; } }
+@media screen and (max-width: 850px) {
+  .button-container button {
+    width: 110px; } }
+@media screen and (max-width: 700px) {
+  .button-container button {
+    font-size: 0.7rem; }
+
+  .profile-container p {
+    font-size: 0.7em;
+    width: 78%; } }
+@media screen and (max-width: 650px) {
   header {
     width: 100%; }
 
@@ -220,6 +236,66 @@ main {
       .button-container button:last-child {
         background-image: url(Assets/info.svg);
         margin-left: 0;
-        margin-right: 1px; } }
+        margin-right: 10px; } }
+@media screen and (max-height: 500px) {
+  .box {
+    background-size: 20%; }
+
+  .button-container {
+    align-self: flex-end; }
+    .button-container button {
+      background-image: url(Assets/download.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 70%;
+      border: none;
+      color: transparent;
+      height: 40px;
+      width: 40px; }
+      .button-container button:last-child {
+        background-image: url(Assets/info.svg); } }
+@media screen and (max-height: 360px) {
+  .box {
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    background-size: 4%;
+    display: flex;
+    height: 12.5vh;
+    justify-content: flex-end;
+    transition: background-size 0.5s;
+    width: 100%; }
+    .box p {
+      font-size: 0.8em;
+      letter-spacing: 0.3em;
+      margin: 0 10px 0 0; }
+    .box:hover {
+      background-size: 5%; }
+
+  .box1 {
+    width: 100%; }
+
+  .profile-container h1 {
+    font-size: 0.7em; }
+  .profile-container p {
+    margin: 0 0 -32px; }
+
+  .bubble-profile-pic {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto; }
+
+  .button-container {
+    align-self: flex-end; }
+    .button-container button {
+      background-image: url(Assets/download.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 70%;
+      border: none;
+      color: transparent;
+      height: 30px;
+      width: 30px; }
+      .button-container button:last-child {
+        background-image: url(Assets/info.svg); } }
 
 /*# sourceMappingURL=styles.css.map */
