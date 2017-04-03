@@ -154,7 +154,7 @@ main {
 @media screen and (min-width: 1000px) {
   .profile-container h1 {
     color: #FFFFFF;
-    font-size: 3em;
+    font-size: 2em;
     margin: 0;
     text-transform: uppercase; } }
 @media screen and (max-width: 850px) {
@@ -208,7 +208,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    margin: 0 10px; }
+    margin: 0 auto; }
 
   .profile-container {
     padding: 0 10px;
@@ -237,9 +237,54 @@ main {
         background-image: url(Assets/info.svg);
         margin-left: 0;
         margin-right: 10px; } }
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 600px) {
   .box {
-    background-size: 20%; }
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    background-size: 5%;
+    display: flex;
+    height: 12.5vh;
+    justify-content: flex-end;
+    transition: background-size 0.5s;
+    width: 100%; }
+    .box p {
+      font-size: 0.8em;
+      letter-spacing: 0.3em;
+      margin: 0 10px 0 0; }
+    .box:hover {
+      background-size: 8%; }
+
+  .box1 {
+    align-items: center;
+    display: flex;
+    height: 15vh;
+    width: 100%; }
+
+  .bubble-container {
+    width: 25%; }
+
+  .bubble-profile-pic {
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-image: url(Images/profile-pic-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto; }
+
+  .profile-container {
+    padding: 0 10px;
+    width: 75%; }
+    .profile-container h1 {
+      font-size: 1em;
+      margin: 0;
+      text-transform: uppercase; }
+    .profile-container p {
+      font-size: 0.1em;
+      margin: 0 0 -10px;
+      width: 78%; }
 
   .button-container {
     align-self: flex-end; }
@@ -250,11 +295,13 @@ main {
       background-size: 70%;
       border: none;
       color: transparent;
-      height: 40px;
-      width: 40px; }
+      height: 30px;
+      width: 30px; }
       .button-container button:last-child {
-        background-image: url(Assets/info.svg); } }
-@media screen and (max-height: 360px) {
+        background-image: url(Assets/info.svg);
+        margin-left: 0;
+        margin-right: 10px; } }
+@media screen and (max-height: 450px) {
   .box {
     background-position: 10% 50%;
     background-repeat: no-repeat;
@@ -272,17 +319,36 @@ main {
       background-size: 5%; }
 
   .box1 {
+    align-items: center;
+    display: flex;
+    height: 15vh;
     width: 100%; }
 
-  .profile-container h1 {
-    font-size: 0.7em; }
-  .profile-container p {
-    margin: 0 0 -32px; }
+  .bubble-container {
+    width: 25%; }
 
   .bubble-profile-pic {
     width: 40px;
     height: 40px;
+    display: block;
+    background-image: url(Images/profile-pic-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
     margin: 0 auto; }
+
+  .profile-container {
+    padding: 0 10px;
+    width: 75%; }
+    .profile-container h1 {
+      font-size: 0.8em;
+      margin: 0;
+      text-transform: uppercase; }
+    .profile-container p {
+      font-size: 0.1em;
+      margin: 0 0 -30px;
+      width: 78%; }
 
   .button-container {
     align-self: flex-end; }
@@ -296,6 +362,8 @@ main {
       height: 30px;
       width: 30px; }
       .button-container button:last-child {
-        background-image: url(Assets/info.svg); } }
+        background-image: url(Assets/info.svg);
+        margin-left: 0;
+        margin-right: 1px; } }
 
 /*# sourceMappingURL=styles.css.map */
